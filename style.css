@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #211;
+}
+canvas{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+input{
+    width: 50px;
+}
