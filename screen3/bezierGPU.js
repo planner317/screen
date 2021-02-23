@@ -18,7 +18,7 @@ uniforms.py = { type: "fv1", value: pointsY.arrPt }
 
 renderer.setSize(cnvScreen.width, cnvScreen.width);
 
-fetch("http://127.0.0.1:5500/bezie.frag").then((r) => {
+fetch("bezie.frag").then((r) => {
     r.text().then((shaderCode) => {
         material = new THREE.ShaderMaterial({ uniforms: uniforms, fragmentShader: shaderCode })
         mesh1 = new THREE.Mesh(new THREE.PlaneBufferGeometry(10, 10), material);
